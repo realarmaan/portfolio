@@ -1,0 +1,116 @@
+/* =====================================================
+   FOOTER - CSS Module
+   ===================================================== */
+
+.footer {
+    position: relative;
+    background: #33434c;
+    padding: 6rem 2rem;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+    }
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name {
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background: linear-gradient(90deg, var(--color-accent-primary) 0%, var(--color-accent-tertiary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.credit {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+.credit strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.year {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.link:hover {
+    color: var(--color-accent-primary);
+}
+
+.link:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 2px;
+}
+
+/* Gradient Decoration */
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-secondary) 50%, var(--color-accent-tertiary) 100%);
+    opacity: 0.3;
+}
+
+.gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle, var(--color-accent-glow) 0%, transparent 70%);
+    opacity: 0.5;
+}
