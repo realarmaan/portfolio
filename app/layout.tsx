@@ -16,8 +16,9 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "REALARMAAN — Portfolio",
-  description: "Exploring the boundaries of artificial cognition. Projects by Armaan.",
+  title: "Armaan — AI Research, Rubab, SaltSense, Healing State Vector (HSV)",
+  description: "Armaan (12) — student, independent AI researcher and founder building Rubab (AI-human hybrid for education), SaltSense (healthcare records), and the Healing State Vector (HSV) proposal.",
+  keywords: ["Armaan", "AI researcher", "Rubab", "SaltSense", "Healing State Vector", "student researcher", "youth founder", "education AI", "health-tech prototype"],
   icons: {
     icon: "/favicon.ico",
   },
